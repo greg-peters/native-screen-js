@@ -1,5 +1,5 @@
 #include <node_api.h>
-#include "Display.h"
+#include "Screen.h"
 
 napi_value getDisplayInfo(napi_env env, napi_callback_info info) {
     napi_status status;

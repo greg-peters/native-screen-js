@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "display",
+            "target_name": "screenJS",
             "sources": [
                 "native/binding.c"
             ],
@@ -9,7 +9,7 @@
                 [
                     'OS=="mac"', {
                         "sources": [
-                            "native/mac/Display.m",
+                            "native/mac/Screen.m",
                         ],
                         "xcode_settings": {
                             "OTHER_LDFLAGS": ["-framework CoreGraphics"]

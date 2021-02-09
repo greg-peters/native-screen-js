@@ -1,6 +1,6 @@
 #import <node_api.h>
 #import <Cocoa/Cocoa.h>
-#import "../Display.h"
+#import "../Screen.h"
 
 napi_status _getDisplayInfo(napi_env env,napi_value* display) {
     napi_status status = napi_create_object(env,display);
