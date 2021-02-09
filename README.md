@@ -22,7 +22,7 @@ Run Demo<br/>
 `node test.js`<br/><br/>
 
 ## Output
-`
+```
 {
   "displayCount": 1,
   "screens": [
@@ -38,4 +38,4 @@ Run Demo<br/>
     }
   ]
 }
-`
+```
