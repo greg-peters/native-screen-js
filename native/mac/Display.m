@@ -4,10 +4,6 @@
 
 napi_status _getDisplayInfo(napi_env env,napi_value* display) {
     napi_status status = napi_create_object(env,display);
-    if(status != napi_ok) {
-        napi_throw_error(env, nil, "Unable to create native NodeJS object");
-        return status;
-    }
     uint32_t screenCount;
     CGGetOnlineDisplayList(INT_MAX, nil, &screenCount); //get number of online screens and store in screenCount
     setNumberProperty(env,display,screenCount,"displayCount");

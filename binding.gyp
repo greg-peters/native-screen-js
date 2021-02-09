@@ -1,7 +1,7 @@
 {
     "targets": [
         {
-            "target_name": "displayJS",
+            "target_name": "display",
             "sources": [
                 "native/binding.c"
             ],
