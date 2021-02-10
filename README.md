@@ -9,8 +9,9 @@ This project is designed to be a cross platform NodeJS display solution that sup
 
 ## Supported Platforms
 <ul>
-  <li>Mac OSX 10.5+</li>
-  <li>Windows 2000 or later</li>
+  <li><img src='https://icons.iconarchive.com/icons/icons8/windows-8/48/Systems-Mac-Os-icon.png'> Mac OSX 10.5+</li>
+  <li><img src='https://icons.iconarchive.com/icons/tatice/operating-systems/48/Windows-icon.png'> Windows 2000 or later</li>
+  <li>(Coming Soon)<img src='https://icons.iconarchive.com/icons/dakirby309/simply-styled/48/OS-Linux-icon.png'> Linux 2.7+ (X11/Wayland)</li>
 </ul>
 
 ## Requirements
