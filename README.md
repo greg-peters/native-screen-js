@@ -1,4 +1,3 @@
-# Screen-js
 This project is designed to be a cross platform NodeJS display solution that supports multiple displays.
 
 <ul> 
