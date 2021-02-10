@@ -16,5 +16,6 @@
     "url" : "https://github.com/greg-peters/screen-js/issues"
   },
   "os" : [ "darwin", "win32" ],
+  "keywords": ["electronjs","display","screen","detect","multiple monitor","multiple display"],
   "license": "MIT"
 }
