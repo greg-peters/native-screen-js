@@ -21,6 +21,12 @@ Compile<br/>
 Run Demo<br/>
 `node test.js`<br/><br/>
 
+## Usage
+```
+const screen = require('native-screen-js');
+console.log(screen.getDisplayInfo());
+```
+
 ## Output
 ```
 {

@@ -8,14 +8,24 @@
   },
   "author": "Greg Peters",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/greg-peters/screen-js.git"
+    "type": "git",
+    "url": "https://github.com/greg-peters/screen-js.git"
   },
   "homepage": "https://github.com/greg-peters/screen-js/#readme",
-  "bugs": { 
-    "url" : "https://github.com/greg-peters/screen-js/issues"
+  "bugs": {
+    "url": "https://github.com/greg-peters/screen-js/issues"
   },
-  "os" : [ "darwin", "win32" ],
-  "keywords": ["electronjs","display","screen","detect","multiple monitor","multiple display"],
+  "os": [
+    "darwin",
+    "win32"
+  ],
+  "keywords": [
+    "electronjs",
+    "display",
+    "screen",
+    "detect",
+    "multiple monitor",
+    "multiple display"
+  ],
   "license": "MIT"
 }
