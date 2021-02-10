@@ -16,6 +16,8 @@ BOOL CALLBACK EnumMonitorsCallback(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpr
     iMonitor.cbSize = sizeof(MONITORINFOEX);
     GetMonitorInfo(hMonitor, &iMonitor);
 
+    //use EnumDisplaySettingsExW  to get extra display information
+
     napi_value screen;
     createObject(gEnv,&screen);
 
@@ -25,6 +27,7 @@ BOOL CALLBACK EnumMonitorsCallback(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpr
     uint32_t height = iMonitor.rcMonitor.bottom - iMonitor.rcMonitor.top;
     uint32_t builtIn = x == 0 && y == 0?1:0;
     uint32_t mainDisplay = iMonitor.dwFlags == MONITORINFOF_PRIMARY;
+    
 
    // setNumberProperty(env,&screen,0,"modelNumber"); //add model number
     setNumberProperty(gEnv,&screen,builtIn,"isBuiltIn");
