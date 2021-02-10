@@ -9,7 +9,7 @@ This project is designed to be a cross platform NodeJS display solution that sup
 
 ## Supported Platforms
 <ul>
-  <li>Mac OSX or later</li>
+  <li>Mac OSX 10.5+</li>
   <li>Windows 2000 or later</li>
 </ul>
 
