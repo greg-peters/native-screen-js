@@ -1,11 +1,20 @@
 {
-  "name": "display-api",
+  "name": "screen-js",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A native screen api for getting multi-monitor information. Specifically designed for calculating coordinates for screen captures",
+  "main": "test.js",
   "scripts": {
     "test": "node test"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Greg Peters",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/greg-peters/screen-js.git"
+  },
+  "homepage": "https://github.com/greg-peters/screen-js/#readme",
+  "bugs": { 
+    "url" : "https://github.com/greg-peters/screen-js/issues"
+  },
+  "os" : [ "darwin", "win32" ],
+  "license": "MIT"
 }
