@@ -19,7 +19,7 @@ napi_status _getDisplayInfo(napi_env env,napi_value* display) {
     for (int i = 0; i < (int)screenCount; i++) {
         napi_value screen;
         createObject(env,&screen);
-        CGDirectDisplayID curScreen = screenList[i]; q
+        CGDirectDisplayID curScreen = screenList[i];
         setNumberProperty(env,&screen,CGDisplayModelNumber(curScreen),"modelNumber");
         setNumberProperty(env,&screen,CGDisplayIsBuiltin(curScreen),"isBuiltIn");
         setNumberProperty(env,&screen,CGDisplayIsMain(curScreen),"isMainDisplay");
