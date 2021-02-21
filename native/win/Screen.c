@@ -36,9 +36,33 @@ BOOL CALLBACK EnumMonitorsCallback(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpr
     setNumberProperty(gEnv,&screen,height,"height");
     setNumberProperty(gEnv,&screen,x,"x");
     setNumberProperty(gEnv,&screen,y,"y");
-   // setNumberProperty(env,&screen,0,"rotation"); //add rotation
+    setNumberProperty(env,&screen,getRotation(),"rotation");
     napi_set_element(gEnv,screens,screenIdx++,screen);
     return TRUE;
+}
+
+uint32_t getRotation() {
+   DEVMODE devmode;
+   //DEVMODE structure
+   ZeroMemory(&devmode, sizeof(DEVMODE));
+   devmode.dmSize = sizeof(DEVMODE);
+   devmode.dmFields = DM_DISPLAYORIENTATION;
+
+   //Check display orientation
+   EnumDisplaySettingsEx(NULL, ENUM_CURRENT_SETTINGS, &devmode, EDS_RAWMODE); 
+   if(devmode.dmDisplayOrientation==DMDO_DEFAULT) {
+       return 0;
+   }
+   if(devmode.dmDisplayOrientation==DMDO_90) {
+       return 90;
+   }
+   if(devmode.dmDisplayOrientation==DMDO_180) {
+       return 180;
+   }
+   if(devmode.dmDisplayOrientation==DMDO_270) {
+       return 270;
+   }
+   return 0; //unable to determine
 }
 
 

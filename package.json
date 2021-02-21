@@ -1,8 +1,8 @@
 {
   "name": "native-screen-js",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A native screen api for getting multi-monitor information. Specifically designed for calculating coordinates for screen captures",
-  "main": "test.js",
+  "main": "index.js",
   "scripts": {
     "test": "node test"
   },
