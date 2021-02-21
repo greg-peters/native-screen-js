@@ -10,11 +10,13 @@ napi_value screens;
 napi_env gEnv;
 uint32_t screenIdx = 0;
 
+uint32_t getRotation();
+
 BOOL CALLBACK EnumMonitorsCallback(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lprcMonitor, LPARAM param)
 {
     MONITORINFOEX iMonitor;
     iMonitor.cbSize = sizeof(MONITORINFOEX);
-    GetMonitorInfo(hMonitor, &iMonitor);
+    GetMonitorInfo(hMonitor,(LPMONITORINFO) &iMonitor);
 
     //use EnumDisplaySettingsExW  to get extra display information
 
@@ -36,7 +38,7 @@ BOOL CALLBACK EnumMonitorsCallback(HMONITOR hMonitor, HDC hdcMonitor, LPRECT lpr
     setNumberProperty(gEnv,&screen,height,"height");
     setNumberProperty(gEnv,&screen,x,"x");
     setNumberProperty(gEnv,&screen,y,"y");
-    setNumberProperty(env,&screen,getRotation(),"rotation");
+    setNumberProperty(gEnv,&screen,getRotation(),"rotation");
     napi_set_element(gEnv,screens,screenIdx++,screen);
     return TRUE;
 }
