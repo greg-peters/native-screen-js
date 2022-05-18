@@ -10,7 +10,7 @@ This project is designed to be a cross platform NodeJS display solution that sup
 <ul>
   <li><img src='https://icons.iconarchive.com/icons/icons8/windows-8/24/Systems-Mac-Os-icon.png'> Mac OSX 10.5+</li>
   <li><img src='https://icons.iconarchive.com/icons/tatice/operating-systems/24/Windows-icon.png'> Windows 2000 or later</li>
-  <li><img src='https://icons.iconarchive.com/icons/dakirby309/simply-styled/24/OS-Linux-icon.png'> Linux 2.7+ (Coming Soon)</li>
+  <li><img src='https://icons.iconarchive.com/icons/dakirby309/simply-styled/24/OS-Linux-icon.png'> Linux 2.7+ (New* Main display only)</li>
 </ul>
 
 ## Requirements
